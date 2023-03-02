@@ -34,7 +34,7 @@ h2{
 
 
 .mypie{
-	list-style-image: url("./images/pie_icon.gif");
+	list-style-type:disc;
 }
 
 
