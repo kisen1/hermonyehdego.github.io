@@ -1,0 +1,79 @@
+body{
+	color: rgb(64,64,64);
+	background-color: white;
+	font-family: Georgia, Garamond, Arial;
+	background-image: url("./images/silverware.jpg");
+	background-repeat: repeat;
+}
+
+
+
+
+h2{
+	color: rgb(164,164,0);
+	background-color: rgb(240,240,240);
+	font-family: "Lucida Sans Unicode", Tahoma, sans-serif;
+	text-decoration: underline;
+	font-weight: normal;
+	font-size: 25pt;
+	letter-spacing: 0.25em;
+	
+}
+
+
+.mymain{
+	text-align: center;
+	font-size: 22pt;
+	font-weight: bold;
+}
+
+
+.heri{
+	list-style-type: none;
+}
+
+
+.mypie{
+	list-style-image: url("./images/pie_icon.gif");
+}
+
+
+
+blockquote{
+	background-color:burlywood;
+	font-style: italic;
+
+}
+
+
+
+a{
+	color:burlywood;
+}
+
+.hermon{
+	text-align: right;
+}
+.hermon1{
+	text-align: right;
+}
+
+
+
+
+
+.home{
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
