@@ -1,12 +1,12 @@
 body{
-    background-color:steelblue;
+    background-color:darkgoldenrod;
     width: 50%;
 }
 
 .gf{
     width:800px;
     height: 400px;
-    background-color:aliceblue;
+    background-color:antiquewhite;
     border:4px solid gray;
     border-radius: 20px;
     box-sizing: border-box;
