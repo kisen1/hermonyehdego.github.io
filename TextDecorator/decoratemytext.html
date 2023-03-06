@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>Text Decorator</title>
+		<link href="decoratemytext.css" type="text/css" rel="stylesheet" />
+        <script src="decoratemytext.js"></script>
+		
+		
+		
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="decoratemytext.css" type="text/css" rel="stylesheet" />
-
-</head>
-
-<body>
+	<body>
+		<h1>Text Decorator</h1>
+		
+		<div>
+			<img src="./decoration.png" alt="very decorated!" />
+		</div>
+        <hr>
         
-        <div class="con">
-            <h1>Text Decorator</h1>
-         
-             <img src="./decoration.png" />
-
+        <div>
+            <fieldset>
+                <legend id="field">Text</legend>
+                <textarea id ="area" class="text" rows="4" cols="30"></textarea>
+                
+            </fieldset>
         </div>
-        <label  >Text
+        <div>
+            <fieldset>
+                <legend id="field">Decoration</legend>
+                <button id="big">Bigger Decorations!</button><br>
+                <input type="checkbox" onchange="change(this);" id="bling" name="bling" value="bling">
+                <label>Bling</label>
+            </fieldset>
+        </div>
+    
 
-        </label>
-
-   
-    <script src="./textdecorator.js"></script>
-</body>
-
-
-
+		
+		
+	</body>
 </html>
