@@ -5,7 +5,7 @@ window.onload = function () {
    
 };
 function big(){
-
+ 
   var text = document.getElementById("area");
   var font = window.getComputedStyle(text);
   var size = font.fontSize;
@@ -13,19 +13,19 @@ function big(){
   document.getElementById("area").style.fontSize=fontsize;
   console.log(fontsize);
 }
-function bigClick(){setInterval(big,300);}
+function bigClick(){setInterval(big,500);}
 
 
 function change(e){
 
    if(e.checked){
-  
+    document.body.style.backgroundImage = "url('100 Dollar Bill dollar.png')";
     document.getElementById("area").style.fontWeight="bold";
     document.getElementById("area").style.color="green";
     document.getElementById("area").style.textDecoration="underline";
    }
    if(!e.checked){
-   
+    document.body.style.backgroundImage = "none";
     document.getElementById("area").style.fontWeight="normal";
     document.getElementById("area").style.color="black";
     document.getElementById("area").style.textDecoration="none";
