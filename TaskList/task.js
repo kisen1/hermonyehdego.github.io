@@ -13,7 +13,7 @@ function addTask() {
         localStorage.setItem("taskME", allTasks);
     }
     else {
-        document.getElementById("taskList").innerHTML = "Sorry, your browser does not support Web Storage...";
+        document.getElementById("taskList").innerHTML = "Sorry";
     }
 }
 function clearTask() {
