@@ -1,0 +1,30 @@
+body{
+    align-content: center;
+    align-items: center;   
+}
+.container{
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-right: 40px;;
+    border:1px solid black;
+    width: 700px;
+    height: auto;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(209, 229, 247);
+}
+#area{
+    margin-left: 15px;
+}
+#create{
+    margin-left: 150px;
+}
+.bottom{
+    float: right;
+}
+#debit,#deposit{
+    size: 70px;
+}
+select{
+    width: 400px;
+}

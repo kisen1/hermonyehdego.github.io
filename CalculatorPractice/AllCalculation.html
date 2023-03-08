@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<link href="calculator.css" type="text/css" rel="stylesheet" />
+       
+		
+		
+		
+	</head>
+
+	<body>
+
+    <h1>Calculator</h1>
+	<div class="starter">
+     <table>
+        <tr>
+            <td>Enter Value:</td>
+            <td><input type="text" name="value1"></td>
+        </tr>
+
+        <tr>
+            <td>Enter Value:</td>
+            <td><input type="text" name="value2"></td>
+        </tr>
+
+        <tr>
+            <td>Choose From Here:</td>
+            <td>
+                <select id="operators" onchange="CalcuYourChoice();">
+                    <option value="add">Add</option>
+                    <option value="sub">Subtract</option>
+                    <option value="divi">Divide</option>
+                    <option value="mult">Multiply</option>
+                </select>
+
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>Calculation:</td>
+            <td><input type="text" name="output"></td>
+        </tr>
+
+
+     </table>
+
+        </div>
+
+
+
+
+
+        <script>
+     function CalcuYourChoice(){
+     var fvalue=parseInt(document.getElementsByName("value1")[0].value);
+     var svalue=parseInt(document.getElementsByName("value2")[0].value);
+     var operators=document.getElementById("operators").value;
+
+    
+
+     
+
+    if(operators==="add"){
+        document.getElementsByName("output")[0].value=fvalue+svalue;
+    }
+
+
+    if(operators==="sub"){
+        document.getElementsByName("output")[0].value=fvalue-svalue;
+    }
+
+    if(operators==="divi"){
+        document.getElementsByName("output")[0].value=fvalue/svalue;
+    }
+
+    if(operators==="mult"){
+        document.getElementsByName("output")[0].value=fvalue*svalue;
+    }
+
+
+     }
+
+
+        </script>
+	</body>
+</html>

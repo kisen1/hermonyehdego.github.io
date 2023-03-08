@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text Decorator</title>
+		<link href="calculator.css" type="text/css" rel="stylesheet" />
+        <script src="decoratemytext.js"></script>
+		
+		
+		
+	</head>
+
+	<body>
+		<h1>Text Decorator</h1>
+		
+		<div>
+			<img src="./images/heri.png" alt="very decorated!"  width="200px" height="200px"/>
+		</div>
+
+
+       <h1>calculator</h1>
+        
+        <div>
+        <table>
+        <tr>
+         <td>Enter Value1: </td>
+         <td> <input type="text" name="value1"/></td>
+        </tr>
+        
+        <tr>
+         <td>Enter Value2:  </td>
+        <td><input type="text" name="value2"/></td>
+       
+        </tr>
+        <tr>
+        <td> <button type="button" name="submt" onclick="calculate();">Calculate</button></td>
+        
+        </tr>
+        <hr/>
+		<tr>
+        <td>The calculation: </td>
+        <td><input type="text" name="output"/></td>
+
+        </tr>
+
+        </table>
+
+        </div> 
+
+
+		<script>
+
+          function calculate(){
+
+          var firstvalue=parseInt(document.getElementsByName("value1")[0].value);
+          var secondvalue=parseInt(document.getElementsByName("value2")[0].value);
+
+
+          var calcu=firstvalue+secondvalue;
+
+
+          document.getElementsByName("output")[0].value=calcu;
+
+
+
+
+
+          }
+
+
+
+        </script>
+	</body>
+</html>

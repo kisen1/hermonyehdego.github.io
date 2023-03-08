@@ -9,7 +9,7 @@ function big(){
   var text = document.getElementById("area");
   var font = window.getComputedStyle(text);
   var size = font.fontSize;
-  var fontsize = parseInt(size)+2+"px";
+  var fontsize = parseInt(size)*2+"px";
   document.getElementById("area").style.fontSize=fontsize;
   console.log(fontsize);
 }

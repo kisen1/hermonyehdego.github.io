@@ -16,6 +16,11 @@ function addTask() {
         document.getElementById("taskList").innerHTML = "Sorry";
     }
 }
+
+
+
+
+
 function clearTask() {
     document.getElementById("taskList").value = "";
     document.getElementById("task").value = "";
@@ -24,6 +29,8 @@ function clearTask() {
 
     localStorage.removeItem("taskME");
 }
+
+
 window.onload = function () {
     document.getElementById("taskList").value = allTasks;
 };

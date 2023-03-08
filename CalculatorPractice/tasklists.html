@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text Decorator</title>
+	
+        
+		
+		
+		
+	</head>
+
+	<body>
+	<h1>Task List</h1>
+     <table>
+        <tr>
+            <th>Task</th>
+            <th>Task List</th> 
+        </tr>
+        <tr>
+          <td><input  type="text" name="taskBox" id="box"></td>
+            <td rowspan="3"><textarea  type="text" name="tasklist" id="list" rows="8" cols="35"></textarea></td>
+        </tr>
+
+        <tr>
+            <td><input type="submit" id="addbtn" value="Add Task" onclick="addtask();"></td>
+        </tr>
+        <tr>
+            <td><button type="submit" Value="Clear task" onclick="cleartask()">Clear Task</button></td>
+        </tr>
+
+     </table>
+
+
+     <script>
+
+var calcu = localStorage.getItem("taskME");
+
+function addtask() {
+
+    var firstvalue=document.getElementsByName("taskBox")[0].value;
+      
+
+
+      var calcu=firstvalue +"\n "+calcu;
+
+
+      document.getElementsByName("tasklist")[0].value=calcu;
+      document.getElementsByName("taskBox")[0].value="";
+      localStorage.setItem("taskME", calcu);
+  
+   
+   
+}
+
+
+
+
+
+
+
+
+
+
+   
+function cleartask() {
+    
+    var firstvalue=document.getElementsByName("taskBox")[0].value;
+      
+
+
+      var calcu=firstvalue;
+
+
+      document.getElementsByName("tasklist")[0].value="";
+      
+      
+   
+   
+}
+
+
+     </script>
+
+	</body>
+</html>
