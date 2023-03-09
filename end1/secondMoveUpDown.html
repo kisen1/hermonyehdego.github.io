@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Furry Friends Campaign</title>
+		<link rel="stylesheet" type="text/css" href="styles/scond.css">
+	</head>
+	<body>
+
+   <h1 id="change_me">Make me do stuff</h1>
+
+
+   <button id="move_up">Move Up</button>
+   <button id="move_down">Move Down</button>
+   <button id="color">Change Color</button>
+   <button id="disappear">Disappear/Re-appear</button>
+  
+ 
+
+
+
+<script src="./scripts/jquery-1.6.2.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    $("#move_up").click(function(){
+ 
+
+        $("h1").animate({top:30},200);
+    });
+
+    $("#move_down").click(function(){
+ 
+
+
+        $("h1").animate({down:500},200);
+    });
+
+    $("#color").click(function(){
+
+        $("h1").css("color", "red");
+    });
+    $("#disappear").click( function() 
+    { $("#change_me").toggle("slow");
+});//end disappear
+
+
+});
+
+
+</script>
+
+		
+	</body>
+</html>
