@@ -1,0 +1,14 @@
+{
+  "name": "nodefolder",
+  "version": "1.0.0",
+  "description": "My HelloWorld node.js demo",
+  "main": "HelloWorld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "helloworld"
+  ],
+  "author": "hermon",
+  "license": "ISC"
+}
