@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Furry Friends Campaign</title>
+	<link  href="tipcalc.css" rel="hermin">
+	</head>
+	<body >
+<div class="hermon">
+        <img src="./heri.png" width="400px" height="300px"/>
+        <h1 font="24px">Tip Calculator</h1>
+
+        <table>
+            <tr>
+                <td>$Subtotal</td>
+                <td><input type="text" id="total"></td>
+            </tr>
+            <tr>
+                <td>%Tip</td>
+                <td><input type="text" id="tip"></td>
+            </tr>
+        </table>
+        <button type="button" id="btn">Calculate Tip</button>
+        <br/>
+        <h1>Your total</h1>
+        <input type="text" id="result">
+
+
+		</div>
+
+
+        <script>
+
+            var buttonclick=document.getElementById("btn");
+            buttonclick.onclick=myfunction;
+
+            function myfunction(){
+
+                var value1=parseInt(document.getElementById("total")[0].value);
+                var value2=parseInt(document.getElementById("tip")[0].value);
+
+                var calcu=value1*value2;
+
+                document.getElementById("result")[0].value=calcu;
+            }
+
+
+
+
+
+        </script>
+	</body>
+</html>

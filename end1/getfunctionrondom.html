@@ -20,12 +20,12 @@ $(document).ready(function(){
 	$("#btn").click(function(){
 		
    
-        function multiply (num1, num2) 
-        { var result = num1*num2; 
-            return result;
-        }
+        function getRandom(num){
+        var my_num = Math.floor(Math.random()*num);
+        return my_num; 
+    }
 
-         var total = multiply (6, 7);
+         var total = getRandom (3);
 
         $("p").append(total);
 

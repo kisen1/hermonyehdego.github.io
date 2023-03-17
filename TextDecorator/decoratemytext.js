@@ -13,6 +13,10 @@ function big(){
   document.getElementById("area").style.fontSize=fontsize;
   console.log(fontsize);
 }
+
+
+
+
 function bigClick(){setInterval(big,500);}
 
 
