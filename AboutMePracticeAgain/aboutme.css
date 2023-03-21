@@ -1,0 +1,23 @@
+.mainc{
+    border:1px solid gray;
+
+}
+
+.content1{
+    border: 1px solid gray;
+    
+    float:left;
+    width:40%;
+    height:400px;
+}
+
+.content2{
+    border: 1px solid gray;
+    width:40%;
+    float:left;
+    height:400px;
+  
+}
+body{
+    background-color: antiquewhite;
+}

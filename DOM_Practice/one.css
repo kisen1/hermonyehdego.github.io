@@ -1,0 +1,12 @@
+h1{
+    border:4px solid gray;
+}
+
+
+.highlighted { 
+    color: red;
+    background-color: blue;
+    border:4px solid darkgreen;
+    width:200px;
+    padding: 45px;
+ }

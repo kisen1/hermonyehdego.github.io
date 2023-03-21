@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Furry Friends Campaign</title>
+		<link rel="stylesheet" type="text/css" href="styles/my_style.css">
+	</head>
+	<body>
+
+   <h1>My Name is hermon</h1>
+   <h2>My father name is Abraham Yehdego</h2>
+   <p class="mine">i want to write about my life but it seems ...</p>
+   <p>what i syour name plesss again </p>
+
+<div clas="picture">
+   <img src="./images/furry_friend.jpg" />
+
+		</div>
+
+		<button type="button" id="mybutton">Click Me!</button>
+<script src="./scripts/jquery-1.6.2.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+	$("#mybutton").click(function(){
+		//<!--$(this).slideUp();-->
+		$("h1").hide("slow");
+		$("h2").toggle("slow");
+	
+
+		$("img").fadeIn(1000);
+		$("img").slideUp();
+
+		$("p.mine").html("okey my life starts like this");
+
+	//setTimeout(booyah1, 5000);
+	
+	
+
+
+
+	});
+
+
+});
+
+
+</script>
+
+		
+	</body>
+</html>

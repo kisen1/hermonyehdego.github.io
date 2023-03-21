@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Furry Friends Campaign</title>
+		
+	</head>
+	<body>
+
+     <p>hermon ...</p>
+       
+ <button type="button" id="btn"> Click Me!</button>
+
+		
+<script src="./scripts/jquery-1.6.2.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+	$("#btn").click(function(){
+		
+   
+        function getRandom(num){
+        var my_num = Math.floor(Math.random()*num);
+        return my_num; 
+    }
+
+         var total = getRandom (3);
+
+        $("p").append(total);
+
+
+
+
+
+
+
+
+
+	});
+
+
+});
+
+
+</script>
+
+		
+	</body>
+</html>
