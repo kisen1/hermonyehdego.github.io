@@ -23,7 +23,7 @@ exports.displays=function(req,res,vals){
           res.write(String(result));
     res.write("</p>");
     res.write(
-        "<a href='https://hermonyehdego.github.io/lab-12/index.html/'>Another calculation</a>"
+        "<a href='https://hermonyehdego/lab-12/index.html/'>Another calculation</a>"
       );
     res.write("</body>");
     res.write("</html>");
