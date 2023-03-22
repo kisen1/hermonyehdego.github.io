@@ -1,3 +1,4 @@
+
 var display;
 var startbtn;
 var stopbtn;
@@ -53,11 +54,6 @@ window.onload = () => {
     
     };
 
-
-
-
-    
-
     turboChecker.onchange = () => {
         if(turboChecker.checked){
             animationSpeed = 50;
@@ -66,12 +62,6 @@ window.onload = () => {
             animationSpeed = 250;
         }
     };
-
-
-
-
-
-
 
     startbtn.onclick = () => {
         //console.log("starting");
@@ -89,12 +79,6 @@ window.onload = () => {
         };
         timeOut = setTimeout(displayFunction, animationSpeed);
     };
-
-
-
-
-
-
 
     stopbtn.onclick = () => {
         stopbtn.disabled = true;
