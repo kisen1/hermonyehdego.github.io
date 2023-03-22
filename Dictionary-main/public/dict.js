@@ -1,7 +1,9 @@
 //let word = $("#word").val();
 $(document).ready(function () {
+
   let word = $("#word").val();
   $("#lookup").click(getWord(word));
+  
 });
 
 function getWord(word) {

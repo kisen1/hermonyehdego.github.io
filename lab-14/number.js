@@ -3,10 +3,10 @@ var app = express();
 var path = require('path');
 var sessions = require('express-session');
 
-var questions = require('./data.js');
+var alldata = require('./data.js');
 
-const ques = questions.questions;
-const ans = questions.answers;
+const ques = alldata.mydata;
+const ans = alldata.datans;
 
 app.set('views', path.join(__dirname, '/views'));
 app.use(express.urlencoded({extended:false}));
