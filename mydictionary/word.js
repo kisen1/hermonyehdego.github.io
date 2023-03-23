@@ -15,19 +15,21 @@ connection.connect((err) => {
 });
 
 exports.wordMeaning = function (res, searchterm) {
-  connection.query('select * from entries where word = "' + searchterm + '"',function (err, rows) {
-     // if (err) throw err;
-      //   res.send(rows);
-      
 
-   if(err){
-        console.log(err)
-    }
-    else{
-      res.status(200).json(rows);
-      //  res.send(result)
-    }
+  return new Promise((resolve,reject)=>{
+    connection.query('select * from entries where word='+ mysql.escape(searchterm),function (err, rows) {
+    if(err){
+         console.log(err)
+         reject(err);
+     }
+     else{
+       //res.status(200).json(rows);
+       resolve(rows);
+       //  res.send(result)
+     }
+ 
 
+  })
 
 
     }

@@ -1,12 +1,23 @@
-var ourRequest= new XMLHttpRequest();
+// var ourRequest= new XMLHttpRequest();
 
 
-ourRequest.open('GET', 'https://learnwebcode.github.io/json-example/animals-1.json')
+// ourRequest.open('GET', 'http://127.0.0.1:5500/pugpractice/aimal.json')
 
-ourRequest.onload=function(){
+// ourRequest.onload=function(){
 
-    console.log(ourRequest.responseText)
-};
+//     console.log(ourRequest.responseText)
+// };
 
 
-ourRequest.send();
+// ourRequest.send();
+
+$.ajax({
+    "url": "http://127.0.0.1:5500/pugpractice/aimal.json", "type": "GET",
+    "success": myAjaxSuccessFunction, "error": ajaxFailure
+    });
+    function myAjaxSuccessFunction(data) {
+        console.log(data);
+    }
+    function ajaxFailure(xhr, status, exception) {
+    }
+

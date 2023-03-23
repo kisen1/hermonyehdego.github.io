@@ -8,6 +8,13 @@ var app = express();
 app.use(bodyParser.json());
 app.use(express.static(__dirname));
 
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+
 // This is the home page
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname + "/dict.html"));
@@ -15,7 +22,12 @@ app.get("/", function (req, res) {
 
 // This is the search page
 app.post("/search", function (req, res) {
-  search.wordMeaning(res, req.body.searchTerm);
+  search.wordMeaning(res, req.body.searchTerm).then((rows)=>{
+    res.status(200).json(rows);
+    console.log("here" + rows);
+  }).catch((err)=>{
+    res.status(500).json(err)
+  })
 });
 
 var server = app.listen(8080, function () {

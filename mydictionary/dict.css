@@ -5,7 +5,7 @@ html{
 }
 body {
   margin:20px;
-  background-color:hsl(0, 72%, 79%) ;
+  background-color:cadetblue(0, 72%, 79%) ;
   padding: 2em 2em 4em;
   max-width: 800px;
   min-height:100%;
@@ -18,11 +18,11 @@ section {
 
 .banner > h1 {
   margin: 0px;
-  color: blue ;
+  color:darkgrey;
 }
 
 .banner {
-  background-color: rgb(253, 77, 18);
+  background-color:wheat(253, 77, 18);
 }
 
 .banner,
