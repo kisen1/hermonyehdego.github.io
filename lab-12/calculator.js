@@ -6,7 +6,7 @@ http.createServer(function (req, res) {
     var q = url.parse(req.url, true);
     var qdata=q.query;
 var filename = "." + q.pathname;
-if (q.pathname=="/cal.js")
+if (q.pathname=="/cal")
 {
     if(qdata.operation=='add'){
         calculatormod.add(req,res,q.query)
@@ -37,4 +37,4 @@ res.writeHead(200,{'Content-Type': 'text/css'}); // Content-Type not included
 res.write(data);
 return res.end();
   });
-}).listen(3000);
+}).listen(8080);

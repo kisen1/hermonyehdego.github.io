@@ -19,10 +19,12 @@ exports.displays=function(req,res,vals){
     res.write("<title>Calculator Web Site</title>"); 
     res.write("</head>");
     res.write("<body>");
-    res.write("<p style=\"background-color:burlywood\" ; style=\"font:14pt bold\";>The result is: ");
+    res.write("<p style=\"background-color:orange\" ; style=\"font:14pt bold\";>The result is: ");
           res.write(String(result));
     res.write("</p>");
-   
+    res.write(
+        "<a href='./lab-12/index.html/'>Another calculation</a>"
+      );
     res.write("</body>");
     res.write("</html>");
     return res.end();
